@@ -216,8 +216,10 @@
     const seekBar = document.getElementById('seekBar');
     const timeLabel = document.getElementById('timeLabel');
     const chapterTime = document.getElementById('chapterTime');
+    const readerProgressKey = 'prisoner-azkaban-reader-progress';
     let currentIndex = 0;
     let currentParagraphId = null;
+    let restoringProgress = false;
 
     function formatTime(seconds) {
       seconds = Math.max(0, Math.floor(seconds || 0));
@@ -244,15 +246,65 @@
       return chapter.audioStart || 0;
     }
 
-    function loadChapter(index, autoplay = false, seek = true) {
+    function findParagraph(chapter, paragraphId) {
+      return chapter.paragraphs.find((paragraph) => paragraph.id === paragraphId);
+    }
+
+    function saveProgress(paragraphId = currentParagraphId) {
+      const chapter = manifest.chapters[currentIndex];
+      const paragraph = paragraphId ? findParagraph(chapter, paragraphId) : null;
+      if (!paragraph) return;
+      const localTime = Math.min(
+        Math.max(audio.currentTime || paragraph.localBegin, paragraph.localBegin),
+        paragraph.localEnd
+      );
+      try {
+        localStorage.setItem(readerProgressKey, JSON.stringify({
+          chapterIndex: currentIndex,
+          paragraphId: paragraph.id,
+          localTime,
+          updatedAt: Date.now()
+        }));
+      } catch (_error) {
+        // Reading should continue even when storage is unavailable.
+      }
+    }
+
+    function loadSavedProgress() {
+      try {
+        const raw = localStorage.getItem(readerProgressKey);
+        if (!raw) return null;
+        const savedProgress = JSON.parse(raw);
+        const chapter = manifest.chapters[savedProgress.chapterIndex];
+        const paragraph = chapter ? findParagraph(chapter, savedProgress.paragraphId) : null;
+        if (!chapter || !paragraph) return null;
+        const localTime = Number.isFinite(Number(savedProgress.localTime)) ? Number(savedProgress.localTime) : paragraph.localBegin;
+        return { ...savedProgress, localTime };
+      } catch (_error) {
+        return null;
+      }
+    }
+
+    function markParagraph(paragraphId, scrollBehavior = 'smooth') {
+      if (paragraphId === currentParagraphId) return;
+      if (currentParagraphId) {
+        document.getElementById(currentParagraphId)?.classList.remove('active');
+      }
+      currentParagraphId = paragraphId;
+      if (currentParagraphId) {
+        const node = document.getElementById(currentParagraphId);
+        node?.classList.add('active');
+        node?.scrollIntoView({ block: 'center', behavior: scrollBehavior });
+      }
+    }
+
+    function loadChapter(index, autoplay = false, seek = true, savedProgress = null) {
       currentIndex = Math.max(0, Math.min(index, manifest.chapters.length - 1));
       const chapter = manifest.chapters[currentIndex];
       currentParagraphId = null;
+      restoringProgress = Boolean(savedProgress);
       const nextSource = new URL(chapter.audio, window.location.href).href;
       const sourceChanged = audio.src !== nextSource;
-      if (sourceChanged) {
-        audio.src = chapter.audio;
-      }
       chapterTitle.textContent = chapter.kind === 'chapter' ? `Chapter ${chapter.number}. ${chapter.title}` : chapter.title;
       reader.innerHTML = '';
       if (chapter.paragraphs.length) {
@@ -263,6 +315,7 @@
           node.textContent = paragraph.text;
           node.addEventListener('click', () => {
             audio.currentTime = paragraph.localBegin;
+            saveProgress(paragraph.id);
             audio.play();
           });
           reader.appendChild(node);
@@ -274,17 +327,54 @@
         reader.appendChild(node);
       }
       renderNav();
-      updateTimes();
+      let playbackStarted = false;
       const startPlayback = () => {
+        if (playbackStarted) return;
+        playbackStarted = true;
+        const finishRestore = () => {
+          if (!restoringProgress) return;
+          if (savedProgress?.paragraphId) {
+            markParagraph(savedProgress.paragraphId, 'auto');
+          }
+          restoringProgress = false;
+        };
+        if (savedProgress) {
+          audio.addEventListener('seeked', finishRestore, { once: true });
+          window.setTimeout(finishRestore, 500);
+        }
         if (seek) {
-          audio.currentTime = chapterAudioStart(chapter);
+          audio.currentTime = savedProgress?.localTime ?? chapterAudioStart(chapter);
         }
         if (autoplay) {
           audio.play();
         }
+        if (savedProgress?.paragraphId) {
+          markParagraph(savedProgress.paragraphId, 'auto');
+        }
+        if (!savedProgress) {
+          updateTimes();
+          restoringProgress = false;
+        }
       };
-      if (sourceChanged && audio.readyState < 1) {
+      if (sourceChanged) {
         audio.addEventListener('loadedmetadata', startPlayback, { once: true });
+        audio.src = chapter.audio;
+        let metadataChecks = 0;
+        const startWhenReady = () => {
+          if (playbackStarted) return;
+          if (audio.readyState >= 1) {
+            startPlayback();
+            return;
+          }
+          metadataChecks += 1;
+          if (metadataChecks < 20) {
+            window.setTimeout(startWhenReady, 50);
+          }
+        };
+        window.setTimeout(startWhenReady, 0);
+        if (savedProgress?.paragraphId) {
+          markParagraph(savedProgress.paragraphId, 'auto');
+        }
       } else {
         startPlayback();
       }
@@ -309,14 +399,9 @@
       const paragraph = chapter.paragraphs.find((item) => local >= item.localBegin && local < item.localEnd);
       const nextId = paragraph ? paragraph.id : null;
       if (nextId === currentParagraphId) return;
-      if (currentParagraphId) {
-        document.getElementById(currentParagraphId)?.classList.remove('active');
-      }
-      currentParagraphId = nextId;
-      if (currentParagraphId) {
-        const node = document.getElementById(currentParagraphId);
-        node?.classList.add('active');
-        node?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      markParagraph(nextId);
+      if (nextId && !restoringProgress) {
+        saveProgress(nextId);
       }
     }
 
@@ -332,6 +417,7 @@
     seekBar.addEventListener('input', () => {
       const chapter = manifest.chapters[currentIndex];
       audio.currentTime = chapterAudioStart(chapter) + (Number(seekBar.value) / 1000) * chapter.duration;
+      updateHighlight(audio.currentTime);
     });
     audio.addEventListener('play', () => playButton.textContent = 'Pause');
     audio.addEventListener('pause', () => playButton.textContent = 'Play');
@@ -343,7 +429,12 @@
       }
     });
 
-    loadChapter(0, false);
+    const savedProgress = loadSavedProgress();
+    if (savedProgress) {
+      loadChapter(savedProgress.chapterIndex, false, true, savedProgress);
+    } else {
+      loadChapter(0, false);
+    }
   </script>
 </body>
 </html>
