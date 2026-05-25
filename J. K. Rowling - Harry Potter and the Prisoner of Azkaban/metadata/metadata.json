@@ -1,0 +1,204 @@
+{
+  "title": "Harry Potter and the Prisoner of Azkaban",
+  "description": {
+    "full": "<p>Jim Dale's Grammy Award-winning performance of J.K. Rowling's iconic stories is a listening adventure for the whole family.<br><i>'Welcome to the Knight Bus, emergency transport for the stranded witch or wizard. Just stick out your wand hand, step on board and we can take you anywhere you want to go.'</i><br>Close your eyes and enter the magical world of Harry Potter. In these editions, Jim Dale's characterful narration is so entertaining, fun, and theatrical you can almost hear the crackle of the fire in the Gryffindor common room.<br>When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it's the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run - and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves... But perhaps most terrifying of all are the Dementors patrolling the school grounds, with their soul-sucking kiss...<br>Having become classics of our time, the Harry Potter stories never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new listeners.</p>",
+    "short": "<p>Jim Dale's Grammy Award-winning performance of J.K. Rowling's iconic stories is a listening adventure for the whole family.<br><i>'Welcome to the Knight Bus, emergency transport for the stranded witch or wizard. Just stick out your wand hand, step on board and we can take you anywhere you want to go.'</i><br>Close your eyes and enter the magical world of Harry Potter. In these editions, Jim Dale's characterful narration is so entertaining, fun, and theatrical you can almost hear the crackle of the fire in the Gryffindor common room.<br>When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it's the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run - and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves... But perhaps most terrifying of all are the Dementors...</p>"
+  },
+  "coverUrl": "https://libbyapp.com/covers/resize?type=auto&width=536&quality=80&force=true&height=536&url=%2FImageType-100%2F3450-1%2F%257B5D12A9AB-C7E6-4FE9-8444-177E25636E0A%257DIMG100.JPG",
+  "creator": [
+    {
+      "name": "J. K. Rowling",
+      "role": "author",
+      "bio": ""
+    },
+    {
+      "name": "Jim Dale",
+      "role": "narrator",
+      "bio": ""
+    },
+    {
+      "name": "Olly Moss",
+      "role": "other",
+      "bio": ""
+    }
+  ],
+  "spine": [
+    {
+      "duration": 4483.68325,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 4435.644,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 4495.516625,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 3996.682375,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 2802.2595,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 4021.864375,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 3860.66275,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 4008.751,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 2713.808875,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 2837.629375,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 2891.91175,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    },
+    {
+      "duration": 1999.0465,
+      "type": "audio/mpeg",
+      "bitrate": 64
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Chapter 1:  Owl Post",
+      "spine": 0,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 2:  Aunt Marge's Big Mistake",
+      "spine": 0,
+      "offset": 1334
+    },
+    {
+      "title": "Chapter 3:  The Knight Bus",
+      "spine": 0,
+      "offset": 2817
+    },
+    {
+      "title": "Chapter 4:  The Leaky Cauldron",
+      "spine": 1,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 5:  The Dementor",
+      "spine": 1,
+      "offset": 1922
+    },
+    {
+      "title": "Chapter 6:  Talons and Tea Leaves",
+      "spine": 2,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 7:  The Boggart in the Wardrobe",
+      "spine": 2,
+      "offset": 2704
+    },
+    {
+      "title": "Chapter 8:  Flight of the Fat Lady",
+      "spine": 3,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 9:  Grim Defeat",
+      "spine": 3,
+      "offset": 1993
+    },
+    {
+      "title": "Chapter 10:  The Marauder's Map",
+      "spine": 4,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 11:  The Firebolt",
+      "spine": 5,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 12:  The Patronus",
+      "spine": 5,
+      "offset": 2187
+    },
+    {
+      "title": "Chapter 13:  Gryffindor Versus Ravenclaw",
+      "spine": 6,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 14:  Snape's Grudge",
+      "spine": 6,
+      "offset": 1605
+    },
+    {
+      "title": "Chapter 15:  The Quidditch Final",
+      "spine": 7,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 16:  Professor Trelawney's Prediction",
+      "spine": 7,
+      "offset": 2195
+    },
+    {
+      "title": "Chapter 17:  Cat, Rat, and Dog",
+      "spine": 8,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 18:  Moony, Wormtail, Padfoot, and Prongs",
+      "spine": 8,
+      "offset": 1731
+    },
+    {
+      "title": "Chapter 19: The Servant of Lord Voldemort",
+      "spine": 9,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 20:  The Dementor's Kiss",
+      "spine": 9,
+      "offset": 2078
+    },
+    {
+      "title": "Chapter 21:  Hermione's Secret",
+      "spine": 10,
+      "offset": 0
+    },
+    {
+      "title": "Chapter 22:  Owl Post Again",
+      "spine": 11,
+      "offset": 0
+    },
+    {
+      "title": "Preview:  Harry Potter and the Goblet of Fire",
+      "spine": 11,
+      "offset": 1894
+    }
+  ]
+}

@@ -1,0 +1,1424 @@
+{
+ "fragments": [
+  {
+   "begin": "0.000",
+   "children": [],
+   "end": "5.680",
+   "id": "f000001",
+   "language": "eng",
+   "lines": [
+    "Chapter Two. Aunt Marge's Big Mistake."
+   ]
+  },
+  {
+   "begin": "5.680",
+   "children": [],
+   "end": "31.480",
+   "id": "f000002",
+   "language": "eng",
+   "lines": [
+    "Harry went down to breakfast the next morning to \ufb01nd the three Dursleys already sitting around the kitchen table. They were watching a brand-new television, a welcomehome-for-the-summer present for Dudley, who had been complaining loudly about the long walk between the fridge and the television in the living room. Dudley had spent most of the summer in the kitchen, his piggy little eyes \ufb01xed on the screen and his \ufb01ve chins wobbling as he ate continually."
+   ]
+  },
+  {
+   "begin": "31.480",
+   "children": [],
+   "end": "56.080",
+   "id": "f000003",
+   "language": "eng",
+   "lines": [
+    "Harry sat down between Dudley and Uncle Vernon, a large, beefy man with very little neck and a lot of mustache. Far from wishing Harry a happy birthday, none of the Dursleys made any sign that they had noticed Harry enter the room, but Harry was far too used to this to care. He helped himself to a piece of toast and then looked up at the reporter on the television, who was halfway through a report on an escaped convict:"
+   ]
+  },
+  {
+   "begin": "56.080",
+   "children": [],
+   "end": "65.680",
+   "id": "f000004",
+   "language": "eng",
+   "lines": [
+    "\"\u2026 The public is warned that Black is armed and extremely dangerous. A special hot line has been set up, and any sighting of Black should be reported immediately.\""
+   ]
+  },
+  {
+   "begin": "65.680",
+   "children": [],
+   "end": "76.920",
+   "id": "f000005",
+   "language": "eng",
+   "lines": [
+    "\"No need to tell us he's no good,\" snorted Uncle Vernon, staring over the top of his newspaper at the prisoner. \"Look at the state of him, the \ufb01lthy layabout! Look at his hair!\""
+   ]
+  },
+  {
+   "begin": "76.920",
+   "children": [],
+   "end": "82.920",
+   "id": "f000006",
+   "language": "eng",
+   "lines": [
+    "He shot a nasty look sideways at Harry, whose untidy hair had always been a source of great annoyance to Uncle"
+   ]
+  },
+  {
+   "begin": "82.920",
+   "children": [],
+   "end": "93.640",
+   "id": "f000007",
+   "language": "eng",
+   "lines": [
+    "Vernon. Compared to the man on the television, however, whose gaunt face was surrounded by a matted, elbowlength tangle, Harry felt very well groomed indeed."
+   ]
+  },
+  {
+   "begin": "93.640",
+   "children": [],
+   "end": "95.280",
+   "id": "f000008",
+   "language": "eng",
+   "lines": [
+    "The reporter had reappeared."
+   ]
+  },
+  {
+   "begin": "95.280",
+   "children": [],
+   "end": "98.800",
+   "id": "f000009",
+   "language": "eng",
+   "lines": [
+    "\"The Ministry of Agriculture and Fisheries will announce today - \""
+   ]
+  },
+  {
+   "begin": "98.800",
+   "children": [],
+   "end": "111.360",
+   "id": "f000010",
+   "language": "eng",
+   "lines": [
+    "\"Hang on!\" barked Uncle Vernon, staring furiously at the reporter. \"You didn't tell us where that maniac's escaped from! What use is that? Lunatic could be coming up the street right now!\""
+   ]
+  },
+  {
+   "begin": "111.360",
+   "children": [],
+   "end": "127.880",
+   "id": "f000011",
+   "language": "eng",
+   "lines": [
+    "Aunt Petunia, who was bony and horse-faced, whipped around and peered intently out of the kitchen window. Harry knew Aunt Petunia would simply love to be the one to call the hot line number. She was the nosiest woman in the world and spent most of her life spying on the boring, lawabiding neighbors."
+   ]
+  },
+  {
+   "begin": "127.880",
+   "children": [],
+   "end": "137.320",
+   "id": "f000012",
+   "language": "eng",
+   "lines": [
+    "\"When will they learn,\" said Uncle Vernon, pounding the table with his large purple \ufb01st, \"that hanging's the only way to deal with these people?\""
+   ]
+  },
+  {
+   "begin": "137.320",
+   "children": [],
+   "end": "143.280",
+   "id": "f000013",
+   "language": "eng",
+   "lines": [
+    "\"Very true,\" said Aunt Petunia, who was still squinting into next door's runner beans."
+   ]
+  },
+  {
+   "begin": "143.280",
+   "children": [],
+   "end": "152.720",
+   "id": "f000014",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon drained his teacup, glanced at his watch, and added, \"I'd better be o\ufb00 in a minute, Petunia. Marge's train gets in at ten.\""
+   ]
+  },
+  {
+   "begin": "152.720",
+   "children": [],
+   "end": "159.240",
+   "id": "f000015",
+   "language": "eng",
+   "lines": [
+    "Harry, whose thoughts had been upstairs with the Broomstick Servicing Kit, was brought back to earth with an unpleasant bump."
+   ]
+  },
+  {
+   "begin": "159.240",
+   "children": [],
+   "end": "164.760",
+   "id": "f000016",
+   "language": "eng",
+   "lines": [
+    "\"Aunt Marge?\" he blurted out. \"Sh - she's not coming here, is she?\""
+   ]
+  },
+  {
+   "begin": "164.760",
+   "children": [],
+   "end": "191.840",
+   "id": "f000017",
+   "language": "eng",
+   "lines": [
+    "Aunt Marge was Uncle Vernon's sister. Even though she was not a blood relative of Harry's (whose mother had been Aunt Petunia's sister), he had been forced to call her \"Aunt\" all his life. Aunt Marge lived in the country, in a house with a large garden, where she bred bulldogs. She didn't often stay at Privet Drive, because she couldn't bear to leave her precious dogs, but each of her visits stood out horribly vividly in Harry's mind."
+   ]
+  },
+  {
+   "begin": "191.840",
+   "children": [],
+   "end": "226.920",
+   "id": "f000018",
+   "language": "eng",
+   "lines": [
+    "At Dudley's \ufb01fth birthday party, Aunt Marge had whacked Harry around the shins with her walking stick to stop him from beating Dudley at musical statues. A few years later, she had turned up at Christmas with a computerized robot for Dudley and a box of dog biscuits for Harry. On her last visit, the year before Harry started at Hogwarts, Harry had accidentally trodden on the tail of her favorite dog. Ripper had chased Harry out into the garden and up a tree, and Aunt Marge had refused to call him o\ufb00 until past midnight. The memory of this incident still brought tears of laughter to Dudley's eyes."
+   ]
+  },
+  {
+   "begin": "226.920",
+   "children": [],
+   "end": "239.960",
+   "id": "f000019",
+   "language": "eng",
+   "lines": [
+    "\"Marge'll be here for a week,\" Uncle Vernon snarled, \"and while we're on the subject\" - he pointed a fat \ufb01nger threateningly at Harry - \"we need to get a few things straight before I go and collect her.\""
+   ]
+  },
+  {
+   "begin": "239.960",
+   "children": [],
+   "end": "247.880",
+   "id": "f000020",
+   "language": "eng",
+   "lines": [
+    "Dudley smirked and withdrew his gaze from the television. Watching Harry being bullied by Uncle Vernon was Dudley's favorite form of entertainment."
+   ]
+  },
+  {
+   "begin": "247.880",
+   "children": [],
+   "end": "255.600",
+   "id": "f000021",
+   "language": "eng",
+   "lines": [
+    "\"Firstly,\" growled Uncle Vernon, \"you'll keep a civil tongue in your head when you're talking to Marge.\""
+   ]
+  },
+  {
+   "begin": "255.600",
+   "children": [],
+   "end": "260.240",
+   "id": "f000022",
+   "language": "eng",
+   "lines": [
+    "\"All right,\" said Harry bitterly, \"if she does when she's talking to me.\""
+   ]
+  },
+  {
+   "begin": "260.240",
+   "children": [],
+   "end": "277.680",
+   "id": "f000023",
+   "language": "eng",
+   "lines": [
+    "\"Secondly,\" said Uncle Vernon, acting as though he had not heard Harry's reply, \"as Marge doesn't know anything about your abnormality, I don't want any - any funny stu\ufb00 while she's here. You behave yourself, got me?\""
+   ]
+  },
+  {
+   "begin": "277.680",
+   "children": [],
+   "end": "281.840",
+   "id": "f000024",
+   "language": "eng",
+   "lines": [
+    "\"I will if she does,\" said Harry through gritted teeth."
+   ]
+  },
+  {
+   "begin": "281.840",
+   "children": [],
+   "end": "295.200",
+   "id": "f000025",
+   "language": "eng",
+   "lines": [
+    "\"And thirdly,\" said Uncle Vernon, his mean little eyes now slits in his great purple face, \"we've told Marge you attend St. Brutus's Secure Center for Incurably Criminal Boys.\""
+   ]
+  },
+  {
+   "begin": "295.200",
+   "children": [],
+   "end": "297.480",
+   "id": "f000026",
+   "language": "eng",
+   "lines": [
+    "\"What?\" Harry yelled."
+   ]
+  },
+  {
+   "begin": "297.480",
+   "children": [],
+   "end": "304.320",
+   "id": "f000027",
+   "language": "eng",
+   "lines": [
+    "\"And you'll be sticking to that story, boy, or there'll be trouble,\" spat Uncle Vernon."
+   ]
+  },
+  {
+   "begin": "304.320",
+   "children": [],
+   "end": "315.000",
+   "id": "f000028",
+   "language": "eng",
+   "lines": [
+    "Harry sat there, white-faced and furious, staring at Uncle Vernon, hardly able to believe it. Aunt Marge coming for a week-long visit - it was the worst birthday present the"
+   ]
+  },
+  {
+   "begin": "315.000",
+   "children": [],
+   "end": "319.560",
+   "id": "f000029",
+   "language": "eng",
+   "lines": [
+    "Dursleys had ever given him, including that pair of Uncle Vernon's old socks."
+   ]
+  },
+  {
+   "begin": "319.560",
+   "children": [],
+   "end": "328.160",
+   "id": "f000030",
+   "language": "eng",
+   "lines": [
+    "\"Well, Petunia,\" said Uncle Vernon, getting heavily to his feet, \"I'll be o\ufb00 to the station, then. Want to come along for the ride, Dudders?\""
+   ]
+  },
+  {
+   "begin": "328.160",
+   "children": [],
+   "end": "335.240",
+   "id": "f000031",
+   "language": "eng",
+   "lines": [
+    "\"No,\" said Dudley, whose attention had returned to the television now that Uncle Vernon had \ufb01nished threatening Harry."
+   ]
+  },
+  {
+   "begin": "335.240",
+   "children": [],
+   "end": "345.080",
+   "id": "f000032",
+   "language": "eng",
+   "lines": [
+    "\"Duddy's got to make himself smart for his auntie,\" said Aunt Petunia, smoothing Dudley's thick blond hair. \"Mummy's bought him a lovely new bow tie.\""
+   ]
+  },
+  {
+   "begin": "345.080",
+   "children": [],
+   "end": "348.000",
+   "id": "f000033",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon clapped Dudley on his porky shoulder."
+   ]
+  },
+  {
+   "begin": "348.000",
+   "children": [],
+   "end": "353.600",
+   "id": "f000034",
+   "language": "eng",
+   "lines": [
+    "\"See you in a bit, then,\" he said, and he left the kitchen."
+   ]
+  },
+  {
+   "begin": "353.600",
+   "children": [],
+   "end": "364.600",
+   "id": "f000035",
+   "language": "eng",
+   "lines": [
+    "Harry, who had been sitting in a kind of horri\ufb01ed trance, had a sudden idea. Abandoning his toast, he got quickly to his feet and followed Uncle Vernon to the front door."
+   ]
+  },
+  {
+   "begin": "364.600",
+   "children": [],
+   "end": "366.880",
+   "id": "f000036",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon was pulling on his car coat."
+   ]
+  },
+  {
+   "begin": "366.880",
+   "children": [],
+   "end": "372.160",
+   "id": "f000037",
+   "language": "eng",
+   "lines": [
+    "\"I'm not taking you,\" he snarled as he turned to see Harry watching him."
+   ]
+  },
+  {
+   "begin": "372.160",
+   "children": [],
+   "end": "377.240",
+   "id": "f000038",
+   "language": "eng",
+   "lines": [
+    "\"Like I wanted to come,\" said Harry coldly. \"I want to ask you something.\""
+   ]
+  },
+  {
+   "begin": "377.240",
+   "children": [],
+   "end": "379.200",
+   "id": "f000039",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon eyed him suspiciously."
+   ]
+  },
+  {
+   "begin": "379.200",
+   "children": [],
+   "end": "385.840",
+   "id": "f000040",
+   "language": "eng",
+   "lines": [
+    "\"Third years at Hog - at my school are allowed to visit the village sometimes,\" said Harry."
+   ]
+  },
+  {
+   "begin": "385.840",
+   "children": [],
+   "end": "390.680",
+   "id": "f000041",
+   "language": "eng",
+   "lines": [
+    "\"So?\" snapped Uncle Vernon, taking his car keys from a hook next to the door."
+   ]
+  },
+  {
+   "begin": "390.680",
+   "children": [],
+   "end": "394.920",
+   "id": "f000042",
+   "language": "eng",
+   "lines": [
+    "\"I need you to sign the permission form,\" said Harry in a rush."
+   ]
+  },
+  {
+   "begin": "394.920",
+   "children": [],
+   "end": "398.560",
+   "id": "f000043",
+   "language": "eng",
+   "lines": [
+    "\"And why should I do that?\" sneered Uncle Vernon."
+   ]
+  },
+  {
+   "begin": "398.560",
+   "children": [],
+   "end": "408.040",
+   "id": "f000044",
+   "language": "eng",
+   "lines": [
+    "\"Well,\" said Harry, choosing his words carefully, \"it'll be hard work, pretending to Aunt Marge I go to that St. Whatsits - \""
+   ]
+  },
+  {
+   "begin": "408.040",
+   "children": [],
+   "end": "418.200",
+   "id": "f000045",
+   "language": "eng",
+   "lines": [
+    "\"St. Brutus's Secure Center for Incurably Criminal Boys!\" bellowed Uncle Vernon, and Harry was pleased to hear a de\ufb01nite note of panic in Uncle Vernon's voice."
+   ]
+  },
+  {
+   "begin": "418.200",
+   "children": [],
+   "end": "426.000",
+   "id": "f000046",
+   "language": "eng",
+   "lines": [
+    "\"Exactly,\" said Harry, looking calmly up into Uncle Vernon's large, purple face. \"It's a lot to remember. I'll have"
+   ]
+  },
+  {
+   "begin": "426.000",
+   "children": [],
+   "end": "431.240",
+   "id": "f000047",
+   "language": "eng",
+   "lines": [
+    "to make it sound convincing, won't I? What if I accidentally let something slip?\""
+   ]
+  },
+  {
+   "begin": "431.240",
+   "children": [],
+   "end": "441.160",
+   "id": "f000048",
+   "language": "eng",
+   "lines": [
+    "\"You'll get the stu\ufb00ing knocked out of you, won't you?\" roared Uncle Vernon, advancing on Harry with his \ufb01st raised. But Harry stood his ground."
+   ]
+  },
+  {
+   "begin": "441.160",
+   "children": [],
+   "end": "449.040",
+   "id": "f000049",
+   "language": "eng",
+   "lines": [
+    "\"Knocking the stu\ufb00ing out of me won't make Aunt Marge forget what I could tell her,\" he said grimly."
+   ]
+  },
+  {
+   "begin": "449.040",
+   "children": [],
+   "end": "454.760",
+   "id": "f000050",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon stopped, his \ufb01st still raised, his face an ugly puce."
+   ]
+  },
+  {
+   "begin": "454.760",
+   "children": [],
+   "end": "467.640",
+   "id": "f000051",
+   "language": "eng",
+   "lines": [
+    "\"But if you sign my permission form,\" Harry went on quickly, \"I swear I'll remember where I'm supposed to go to school, and I'll act like a Mug - like I'm normal and everything.\""
+   ]
+  },
+  {
+   "begin": "467.640",
+   "children": [],
+   "end": "474.240",
+   "id": "f000052",
+   "language": "eng",
+   "lines": [
+    "Harry could tell that Uncle Vernon was thinking it over, even if his teeth were bared and a vein was throbbing in his temple."
+   ]
+  },
+  {
+   "begin": "474.240",
+   "children": [],
+   "end": "486.920",
+   "id": "f000053",
+   "language": "eng",
+   "lines": [
+    "\"Right,\" he snapped \ufb01nally. \"I shall monitor your behavior carefully during Marge's visit. If, at the end of it, you've toed the line and kept to the story, I'll sign your ruddy form.\""
+   ]
+  },
+  {
+   "begin": "486.920",
+   "children": [],
+   "end": "494.520",
+   "id": "f000054",
+   "language": "eng",
+   "lines": [
+    "He wheeled around, pulled open the front door, and slammed it so hard that one of the little panes of glass at the top fell out."
+   ]
+  },
+  {
+   "begin": "494.520",
+   "children": [],
+   "end": "520.480",
+   "id": "f000055",
+   "language": "eng",
+   "lines": [
+    "Harry didn't return to the kitchen. He went back upstairs to his bedroom. If he was going to act like a real Muggle, he'd better start now. Slowly and sadly he gathered up all his presents and his birthday cards and hid them under the loose \ufb02oorboard with his homework. Then he went to Hedwig's cage. Errol seemed to have recovered; he and Hedwig were both asleep, heads under their wings. Harry sighed, then poked them both awake."
+   ]
+  },
+  {
+   "begin": "520.480",
+   "children": [],
+   "end": "541.400",
+   "id": "f000056",
+   "language": "eng",
+   "lines": [
+    "\"Hedwig,\" he said gloomily, \"you're going to have to clear o\ufb00 for a week. Go with Errol. Ron'll look after you. I'll write him a note, explaining. And don't look at me like that\" - Hedwig's large amber eyes were reproachful - \"it's not my fault. It's the only way I'll be allowed to visit Hogsmeade with Ron and Hermione.\""
+   ]
+  },
+  {
+   "begin": "541.400",
+   "children": [],
+   "end": "556.120",
+   "id": "f000057",
+   "language": "eng",
+   "lines": [
+    "Ten minutes later, Errol and Hedwig (who had a note to Ron bound to her leg) soared out of the window and out of sight. Harry, now feeling thoroughly miserable, put the empty cage away inside the wardrobe."
+   ]
+  },
+  {
+   "begin": "556.120",
+   "children": [],
+   "end": "565.160",
+   "id": "f000058",
+   "language": "eng",
+   "lines": [
+    "But Harry didn't have long to brood. In next to no time, Aunt Petunia was shrieking up the stairs for Harry to come down and get ready to welcome their guest."
+   ]
+  },
+  {
+   "begin": "565.160",
+   "children": [],
+   "end": "570.760",
+   "id": "f000059",
+   "language": "eng",
+   "lines": [
+    "\"Do something about your hair!\" Aunt Petunia snapped as he reached the hall."
+   ]
+  },
+  {
+   "begin": "570.760",
+   "children": [],
+   "end": "581.760",
+   "id": "f000060",
+   "language": "eng",
+   "lines": [
+    "Harry couldn't see the point of trying to make his hair lie \ufb02at. Aunt Marge loved criticizing him, so the untidier he looked, the happier she would be."
+   ]
+  },
+  {
+   "begin": "581.760",
+   "children": [],
+   "end": "591.160",
+   "id": "f000061",
+   "language": "eng",
+   "lines": [
+    "All too soon, there was a crunch of gravel outside as Uncle Vernon's car pulled back into the driveway, then the clunk of the car doors and footsteps on the garden path."
+   ]
+  },
+  {
+   "begin": "591.160",
+   "children": [],
+   "end": "595.440",
+   "id": "f000062",
+   "language": "eng",
+   "lines": [
+    "\"Get the door!\" Aunt Petunia hissed at Harry."
+   ]
+  },
+  {
+   "begin": "595.440",
+   "children": [],
+   "end": "600.680",
+   "id": "f000063",
+   "language": "eng",
+   "lines": [
+    "A feeling of great gloom in his stomach, Harry pulled the door open."
+   ]
+  },
+  {
+   "begin": "600.680",
+   "children": [],
+   "end": "620.120",
+   "id": "f000064",
+   "language": "eng",
+   "lines": [
+    "On the threshold stood Aunt Marge. She was very like Uncle Vernon: large, beefy, and purple-faced, she even had a mustache, though not as bushy as his. In one hand she held an enormous suitcase, and tucked under the other was an old and evil-tempered bulldog."
+   ]
+  },
+  {
+   "begin": "620.120",
+   "children": [],
+   "end": "625.120",
+   "id": "f000065",
+   "language": "eng",
+   "lines": [
+    "\"Where's my Dudders?\" roared Aunt Marge. \"Where's my ne\ufb00y-poo?\""
+   ]
+  },
+  {
+   "begin": "625.120",
+   "children": [],
+   "end": "643.000",
+   "id": "f000066",
+   "language": "eng",
+   "lines": [
+    "Dudley came waddling down the hall, his blond hair plastered \ufb02at to his fat head, a bow tie just visible under his many chins. Aunt Marge thrust the suitcase into Harry's stomach, knocking the wind out of him, seized Dudley in a tight one-armed hug, and planted a large kiss on his cheek."
+   ]
+  },
+  {
+   "begin": "643.000",
+   "children": [],
+   "end": "656.240",
+   "id": "f000067",
+   "language": "eng",
+   "lines": [
+    "Harry knew perfectly well that Dudley only put up with Aunt Marge's hugs because he was well paid for it, and sure enough, when they broke apart, Dudley had a crisp twentypound note clutched in his fat \ufb01st."
+   ]
+  },
+  {
+   "begin": "656.240",
+   "children": [],
+   "end": "664.400",
+   "id": "f000068",
+   "language": "eng",
+   "lines": [
+    "\"Petunia!\" shouted Aunt Marge, striding past Harry as though he was a hat stand. Aunt Marge and Aunt Petunia"
+   ]
+  },
+  {
+   "begin": "664.400",
+   "children": [],
+   "end": "670.880",
+   "id": "f000069",
+   "language": "eng",
+   "lines": [
+    "kissed, or rather, Aunt Marge bumped her large jaw against Aunt Petunia's bony cheekbone."
+   ]
+  },
+  {
+   "begin": "670.880",
+   "children": [],
+   "end": "674.640",
+   "id": "f000070",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon now came in, smiling jovially as he shut the door."
+   ]
+  },
+  {
+   "begin": "674.640",
+   "children": [],
+   "end": "677.960",
+   "id": "f000071",
+   "language": "eng",
+   "lines": [
+    "\"Tea, Marge?\" he said. \"And what will Ripper take?\""
+   ]
+  },
+  {
+   "begin": "677.960",
+   "children": [],
+   "end": "700.920",
+   "id": "f000072",
+   "language": "eng",
+   "lines": [
+    "\"Ripper can have some tea out of my saucer,\" said Aunt Marge as they all proceeded into the kitchen, leaving Harry alone in the hall with the suitcase. But Harry wasn't complaining; any excuse not to be with Aunt Marge was \ufb01ne by him, so he began to heave the case upstairs into the spare bedroom, taking as long as he could."
+   ]
+  },
+  {
+   "begin": "700.920",
+   "children": [],
+   "end": "717.800",
+   "id": "f000073",
+   "language": "eng",
+   "lines": [
+    "By the time he got back to the kitchen, Aunt Marge had been supplied with tea and fruitcake, and Ripper was lapping noisily in the corner. Harry saw Aunt Petunia wince slightly as specks of tea and drool \ufb02ecked her clean \ufb02oor. Aunt Petunia hated animals."
+   ]
+  },
+  {
+   "begin": "717.800",
+   "children": [],
+   "end": "723.000",
+   "id": "f000074",
+   "language": "eng",
+   "lines": [
+    "\"Who's looking after the other dogs, Marge?\" Uncle Vernon asked."
+   ]
+  },
+  {
+   "begin": "723.000",
+   "children": [],
+   "end": "737.080",
+   "id": "f000075",
+   "language": "eng",
+   "lines": [
+    "\"Oh, I've got Colonel Fubster managing them,\" boomed Aunt Marge. \"He's retired now, good for him to have something to do. But I couldn't leave poor old Ripper. He pines if he's away from me.\""
+   ]
+  },
+  {
+   "begin": "737.080",
+   "children": [],
+   "end": "743.800",
+   "id": "f000076",
+   "language": "eng",
+   "lines": [
+    "Ripper began to growl again as Harry sat down. This directed Aunt Marge's attention to Harry for the \ufb01rst time."
+   ]
+  },
+  {
+   "begin": "743.800",
+   "children": [],
+   "end": "748.240",
+   "id": "f000077",
+   "language": "eng",
+   "lines": [
+    "\"So!\" she barked. \"Still here, are you?\""
+   ]
+  },
+  {
+   "begin": "748.240",
+   "children": [],
+   "end": "750.480",
+   "id": "f000078",
+   "language": "eng",
+   "lines": [
+    "\"Yes,\" said Harry."
+   ]
+  },
+  {
+   "begin": "750.480",
+   "children": [],
+   "end": "766.360",
+   "id": "f000079",
+   "language": "eng",
+   "lines": [
+    "\"Don't you say 'yes' in that ungrateful tone,\" Aunt Marge growled. \"It's damn good of Vernon and Petunia to keep you. Wouldn't have done it myself. You'd have gone straight to an orphanage if you'd been dumped on my doorstep.\""
+   ]
+  },
+  {
+   "begin": "766.360",
+   "children": [],
+   "end": "776.240",
+   "id": "f000080",
+   "language": "eng",
+   "lines": [
+    "Harry was bursting to say that he'd rather live in an orphanage than with the Dursleys, but the thought of the Hogsmeade form stopped him. He forced his face into a painful smile."
+   ]
+  },
+  {
+   "begin": "776.240",
+   "children": [],
+   "end": "788.800",
+   "id": "f000081",
+   "language": "eng",
+   "lines": [
+    "\"Don't you smirk at me!\" boomed Aunt Marge. \"I can see you haven't improved since I last saw you. I hoped school would knock some manners into you.\" She took a large gulp"
+   ]
+  },
+  {
+   "begin": "788.800",
+   "children": [],
+   "end": "794.040",
+   "id": "f000082",
+   "language": "eng",
+   "lines": [
+    "of tea, wiped her mustache, and said, \"Where is it that you send him, again, Vernon?\""
+   ]
+  },
+  {
+   "begin": "794.040",
+   "children": [],
+   "end": "800.640",
+   "id": "f000083",
+   "language": "eng",
+   "lines": [
+    "\"St. Brutus's,\" said Uncle Vernon promptly. \"It's a \ufb01rstrate institution for hopeless cases.\""
+   ]
+  },
+  {
+   "begin": "800.640",
+   "children": [],
+   "end": "808.600",
+   "id": "f000084",
+   "language": "eng",
+   "lines": [
+    "\"I see,\" said Aunt Marge. \"Do they use the cane at St. Brutus's, boy?\" she barked across the table."
+   ]
+  },
+  {
+   "begin": "808.600",
+   "children": [],
+   "end": "809.080",
+   "id": "f000085",
+   "language": "eng",
+   "lines": [
+    "\"Er - \""
+   ]
+  },
+  {
+   "begin": "809.080",
+   "children": [],
+   "end": "813.240",
+   "id": "f000086",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon nodded curtly behind Aunt Marge's back."
+   ]
+  },
+  {
+   "begin": "813.240",
+   "children": [],
+   "end": "819.160",
+   "id": "f000087",
+   "language": "eng",
+   "lines": [
+    "\"Yes,\" said Harry. Then, feeling he might as well do the thing properly, he added, \"all the time.\""
+   ]
+  },
+  {
+   "begin": "819.160",
+   "children": [],
+   "end": "836.080",
+   "id": "f000088",
+   "language": "eng",
+   "lines": [
+    "\"Excellent,\" said Aunt Marge. \"I won't have this nambypamby, wishy-washy nonsense about not hitting people who deserve it. A good thrashing is what's needed in ninety-nine cases out of a hundred. Have you been beaten often?\""
+   ]
+  },
+  {
+   "begin": "836.080",
+   "children": [],
+   "end": "840.240",
+   "id": "f000089",
+   "language": "eng",
+   "lines": [
+    "\"Oh, yeah,\" said Harry, \"loads of times.\""
+   ]
+  },
+  {
+   "begin": "840.240",
+   "children": [],
+   "end": "841.960",
+   "id": "f000090",
+   "language": "eng",
+   "lines": [
+    "Aunt Marge narrowed her eyes."
+   ]
+  },
+  {
+   "begin": "841.960",
+   "children": [],
+   "end": "862.720",
+   "id": "f000091",
+   "language": "eng",
+   "lines": [
+    "\"I still don't like your tone, boy,\" she said. \"If you can speak of your beatings in that casual way, they clearly aren't hitting you hard enough. Petunia, I'd write if I were you. Make it clear that you approve the use of extreme force in this boy's case.\""
+   ]
+  },
+  {
+   "begin": "862.720",
+   "children": [],
+   "end": "869.880",
+   "id": "f000092",
+   "language": "eng",
+   "lines": [
+    "Perhaps Uncle Vernon was worried that Harry might forget their bargain; in any case, he changed the subject abruptly."
+   ]
+  },
+  {
+   "begin": "869.880",
+   "children": [],
+   "end": "877.760",
+   "id": "f000093",
+   "language": "eng",
+   "lines": [
+    "\"Heard the news this morning, Marge? What about that escaped prisoner, eh?\""
+   ]
+  },
+  {
+   "begin": "877.760",
+   "children": [],
+   "end": "911.960",
+   "id": "f000094",
+   "language": "eng",
+   "lines": [
+    "As Aunt Marge started to make herself at home, Harry caught himself thinking almost longingly of life at number four without her. Uncle Vernon and Aunt Petunia usually encouraged Harry to stay out of their way, which Harry was only too happy to do. Aunt Marge, on the other hand, wanted Harry under her eye at all times, so that she could boom out suggestions for his improvement. She delighted in comparing Harry with Dudley, and took huge pleasure in buying Dudley expensive presents while glaring at Harry, as though daring him to ask why he hadn't got a present too."
+   ]
+  },
+  {
+   "begin": "911.960",
+   "children": [],
+   "end": "918.120",
+   "id": "f000095",
+   "language": "eng",
+   "lines": [
+    "She also kept throwing out dark hints about what made Harry such an unsatisfactory person."
+   ]
+  },
+  {
+   "begin": "918.120",
+   "children": [],
+   "end": "932.760",
+   "id": "f000096",
+   "language": "eng",
+   "lines": [
+    "\"You mustn't blame yourself for the way the boy's turned out, Vernon,\" she said over lunch on the third day. \"If there's something rotten on the inside, there's nothing anyone can do about it.\""
+   ]
+  },
+  {
+   "begin": "932.760",
+   "children": [],
+   "end": "945.320",
+   "id": "f000097",
+   "language": "eng",
+   "lines": [
+    "Harry tried to concentrate on his food, but his hands shook and his face was starting to burn with anger. Remember the form, he told himself. Think about Hogsmeade. Don't say anything. Don't rise -"
+   ]
+  },
+  {
+   "begin": "945.320",
+   "children": [],
+   "end": "948.000",
+   "id": "f000098",
+   "language": "eng",
+   "lines": [
+    "Aunt Marge reached for her glass of wine."
+   ]
+  },
+  {
+   "begin": "948.000",
+   "children": [],
+   "end": "958.920",
+   "id": "f000099",
+   "language": "eng",
+   "lines": [
+    "\"It's one of the basic rules of breeding,\" she said. \"You see it all the time with dogs. If there's something wrong with the bitch, there'll be something wrong with the pup - \""
+   ]
+  },
+  {
+   "begin": "958.920",
+   "children": [],
+   "end": "971.400",
+   "id": "f000100",
+   "language": "eng",
+   "lines": [
+    "At that moment, the wineglass Aunt Marge was holding exploded in her hand. Shards of glass \ufb02ew in every direction and Aunt Marge sputtered and blinked, her great ruddy face dripping."
+   ]
+  },
+  {
+   "begin": "971.400",
+   "children": [],
+   "end": "975.640",
+   "id": "f000101",
+   "language": "eng",
+   "lines": [
+    "\"Marge!\" squealed Aunt Petunia. \"Marge, are you all right?\""
+   ]
+  },
+  {
+   "begin": "975.640",
+   "children": [],
+   "end": "992.160",
+   "id": "f000102",
+   "language": "eng",
+   "lines": [
+    "\"Not to worry,\" grunted Aunt Marge, mopping her face with her napkin. \"Must have squeezed it too hard. Did the same thing at Colonel Fubster's the other day. No need to fuss, Petunia, I have a very \ufb01rm grip \u2026\""
+   ]
+  },
+  {
+   "begin": "992.160",
+   "children": [],
+   "end": "1001.720",
+   "id": "f000103",
+   "language": "eng",
+   "lines": [
+    "But Aunt Petunia and Uncle Vernon were both looking at Harry suspiciously, so he decided he'd better skip dessert and escape from the table as soon as he could."
+   ]
+  },
+  {
+   "begin": "1001.720",
+   "children": [],
+   "end": "1021.200",
+   "id": "f000104",
+   "language": "eng",
+   "lines": [
+    "Outside in the hall, he leaned against the wall, breathing deeply. It had been a long time since he'd lost control and made something explode. He couldn't a\ufb00ord to let it happen again. The Hogsmeade form wasn't the only thing at stake - if he carried on like that, he'd be in trouble with the Ministry of Magic."
+   ]
+  },
+  {
+   "begin": "1021.200",
+   "children": [],
+   "end": "1034.880",
+   "id": "f000105",
+   "language": "eng",
+   "lines": [
+    "Harry was still an underage wizard, and he was forbidden by wizard law to do magic outside school. His record wasn't exactly clean either. Only last summer he'd gotten an o\ufb00icial warning that had stated quite clearly that if the"
+   ]
+  },
+  {
+   "begin": "1034.880",
+   "children": [],
+   "end": "1047.240",
+   "id": "f000106",
+   "language": "eng",
+   "lines": [
+    "Ministry got wind of any more magic in Privet Drive, Harry would face expulsion from Hogwarts. He heard the Dursleys leaving the table and hurried upstairs out of the way."
+   ]
+  },
+  {
+   "begin": "1047.240",
+   "children": [],
+   "end": "1067.360",
+   "id": "f000107",
+   "language": "eng",
+   "lines": [
+    "Harry got through the next three days by forcing himself to think about his Handbook of Do-It-Yourself Broomcare whenever Aunt Marge started on him. This worked quite well, though it seemed to give him a glazed look, because Aunt Marge started voicing the opinion that he was mentally subnormal."
+   ]
+  },
+  {
+   "begin": "1067.360",
+   "children": [],
+   "end": "1096.320",
+   "id": "f000108",
+   "language": "eng",
+   "lines": [
+    "At last, at long last, the \ufb01nal evening of Marge's stay arrived. Aunt Petunia cooked a fancy dinner and Uncle Vernon uncorked several bottles of wine. They got all the way through the soup and the salmon without a single mention of Harry's faults; during the lemon meringue pie, Uncle Vernon bored them all with a long talk about Grunnings, his drill-making company; then Aunt Petunia made co\ufb00ee and Uncle Vernon brought out a bottle of brandy."
+   ]
+  },
+  {
+   "begin": "1096.320",
+   "children": [],
+   "end": "1098.880",
+   "id": "f000109",
+   "language": "eng",
+   "lines": [
+    "\"Can I tempt you, Marge?\""
+   ]
+  },
+  {
+   "begin": "1098.880",
+   "children": [],
+   "end": "1105.440",
+   "id": "f000110",
+   "language": "eng",
+   "lines": [
+    "Aunt Marge had already had quite a lot of wine. Her huge face was very red."
+   ]
+  },
+  {
+   "begin": "1105.440",
+   "children": [],
+   "end": "1114.400",
+   "id": "f000111",
+   "language": "eng",
+   "lines": [
+    "\"Just a small one, then,\" she chuckled. \"A bit more than that \u2026 and a bit more \u2026 that's the ticket.\""
+   ]
+  },
+  {
+   "begin": "1114.400",
+   "children": [],
+   "end": "1129.080",
+   "id": "f000112",
+   "language": "eng",
+   "lines": [
+    "Dudley was eating his fourth slice of pie. Aunt Petunia was sipping co\ufb00ee with her little \ufb01nger sticking out. Harry really wanted to disappear into his bedroom, but he met Uncle Vernon's angry little eyes and knew he would have to sit it out."
+   ]
+  },
+  {
+   "begin": "1129.080",
+   "children": [],
+   "end": "1160.560",
+   "id": "f000113",
+   "language": "eng",
+   "lines": [
+    "\"Aah,\" said Aunt Marge, smacking her lips and putting the empty brandy glass back down. \"Excellent nosh, Petunia. It's normally just a fry-up for me of an evening, with twelve dogs to look after. \u2026\" She burped richly and patted her great tweed stomach. \"Pardon me. But I do like to see a healthy-sized boy,\" she went on, winking at Dudley. \"You'll"
+   ]
+  },
+  {
+   "begin": "1160.560",
+   "children": [],
+   "end": "1167.880",
+   "id": "f000114",
+   "language": "eng",
+   "lines": [
+    "be a proper-sized man, Dudders, like your father. Yes, I'll have a spot more brandy, Vernon. \u2026\""
+   ]
+  },
+  {
+   "begin": "1167.880",
+   "children": [],
+   "end": "1170.560",
+   "id": "f000115",
+   "language": "eng",
+   "lines": [
+    "\"Now, this one here - \""
+   ]
+  },
+  {
+   "begin": "1170.560",
+   "children": [],
+   "end": "1175.600",
+   "id": "f000116",
+   "language": "eng",
+   "lines": [
+    "She jerked her head at Harry, who felt his stomach clench. The Handbook, he thought quickly."
+   ]
+  },
+  {
+   "begin": "1175.600",
+   "children": [],
+   "end": "1191.240",
+   "id": "f000117",
+   "language": "eng",
+   "lines": [
+    "\"This one's got a mean, runty look about him. You get that with dogs. I had Colonel Fubster drown one last year. Ratty little thing it was. Weak. Underbred.\""
+   ]
+  },
+  {
+   "begin": "1191.240",
+   "children": [],
+   "end": "1197.760",
+   "id": "f000118",
+   "language": "eng",
+   "lines": [
+    "Harry was trying to remember page twelve of his book: A Charm to Cure Reluctant Reversers."
+   ]
+  },
+  {
+   "begin": "1197.760",
+   "children": [],
+   "end": "1226.640",
+   "id": "f000119",
+   "language": "eng",
+   "lines": [
+    "\"It all comes down to blood, as I was saying the other day. Bad blood will out. Now, I'm saying nothing against your family, Petunia\" - she patted Aunt Petunia's bony hand with her shovellike one - \"but your sister was a bad egg. They turn up in the best families. Then she ran o\ufb00 with a wastrel and here's the result right in front of us.\""
+   ]
+  },
+  {
+   "begin": "1226.640",
+   "children": [],
+   "end": "1241.560",
+   "id": "f000120",
+   "language": "eng",
+   "lines": [
+    "Harry was staring at his plate, a funny ringing in his ears. Grasp your broom \ufb01rmly by the tail, he thought. But he couldn't remember what came next. Aunt Marge's voice seemed to be boring into him like one of Uncle Vernon's drills."
+   ]
+  },
+  {
+   "begin": "1241.560",
+   "children": [],
+   "end": "1252.600",
+   "id": "f000121",
+   "language": "eng",
+   "lines": [
+    "\"This Potter,\" said Aunt Marge loudly, seizing the brandy bottle and splashing more into her glass and over the tablecloth, \"you never told me what he did?\""
+   ]
+  },
+  {
+   "begin": "1252.600",
+   "children": [],
+   "end": "1259.800",
+   "id": "f000122",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon and Aunt Petunia were looking extremely tense. Dudley had even looked up from his pie to gape at his parents."
+   ]
+  },
+  {
+   "begin": "1259.800",
+   "children": [],
+   "end": "1266.480",
+   "id": "f000123",
+   "language": "eng",
+   "lines": [
+    "\"He - didn't work,\" said Uncle Vernon, with half a glance at Harry. \"Unemployed.\""
+   ]
+  },
+  {
+   "begin": "1266.480",
+   "children": [],
+   "end": "1280.760",
+   "id": "f000124",
+   "language": "eng",
+   "lines": [
+    "\"As I expected!\" said Aunt Marge, taking a huge swig of brandy and wiping her chin on her sleeve. \"A no-account, good-for-nothing, lazy scrounger who - \""
+   ]
+  },
+  {
+   "begin": "1280.760",
+   "children": [],
+   "end": "1291.000",
+   "id": "f000125",
+   "language": "eng",
+   "lines": [
+    "\"He was not,\" said Harry suddenly. The table went very quiet. Harry was shaking all over. He had never felt so angry in his life."
+   ]
+  },
+  {
+   "begin": "1291.000",
+   "children": [],
+   "end": "1297.080",
+   "id": "f000126",
+   "language": "eng",
+   "lines": [
+    "\"MORE BRANDY!\" yelled Uncle Vernon, who had gone very white. He emptied the bottle into Aunt Marge's glass."
+   ]
+  },
+  {
+   "begin": "1297.080",
+   "children": [],
+   "end": "1300.040",
+   "id": "f000127",
+   "language": "eng",
+   "lines": [
+    "\"You, boy,\" he snarled at Harry. \"Go to bed, go on - \""
+   ]
+  },
+  {
+   "begin": "1300.040",
+   "children": [],
+   "end": "1318.680",
+   "id": "f000128",
+   "language": "eng",
+   "lines": [
+    "\"No, Vernon,\" hiccuped Aunt Marge, holding up a hand, her tiny bloodshot eyes \ufb01xed on Harry's. \"Go on, boy, go on. Proud of your parents, are you? They go and get themselves killed in a car crash (drunk, I expect) - \""
+   ]
+  },
+  {
+   "begin": "1318.680",
+   "children": [],
+   "end": "1324.560",
+   "id": "f000129",
+   "language": "eng",
+   "lines": [
+    "\"They didn't die in a car crash!\" said Harry, who found himself on his feet."
+   ]
+  },
+  {
+   "begin": "1324.560",
+   "children": [],
+   "end": "1343.960",
+   "id": "f000130",
+   "language": "eng",
+   "lines": [
+    "\"They died in a car crash, you nasty little liar, and left you to be a burden on their decent, hardworking relatives!\" screamed Aunt Marge, swelling with fury. \"You are an insolent, ungrateful little - \""
+   ]
+  },
+  {
+   "begin": "1343.960",
+   "children": [],
+   "end": "1378.080",
+   "id": "f000131",
+   "language": "eng",
+   "lines": [
+    "But Aunt Marge suddenly stopped speaking. For a moment, it looked as though words had failed her. She seemed to be swelling with inexpressible anger - but the swelling didn't stop. Her great red face started to expand, her tiny eyes bulged, and her mouth stretched too tightly for speech - next second, several buttons had just burst from her tweed jacket and pinged o\ufb00 the walls - she was in\ufb02ating like a monstrous balloon, her stomach bursting free of her tweed waistband, each of her \ufb01ngers blowing up like a salami -"
+   ]
+  },
+  {
+   "begin": "1378.080",
+   "children": [],
+   "end": "1403.640",
+   "id": "f000132",
+   "language": "eng",
+   "lines": [
+    "\"MARGE!\" yelled Uncle Vernon and Aunt Petunia together as Aunt Marge's whole body began to rise o\ufb00 her chair toward the ceiling. She was entirely round, now, like a vast life buoy with piggy eyes, and her hands and feet stuck out weirdly as she drifted up into the air, making apoplectic popping noises. Ripper came skidding into the room, barking madly."
+   ]
+  },
+  {
+   "begin": "1403.640",
+   "children": [],
+   "end": "1404.960",
+   "id": "f000133",
+   "language": "eng",
+   "lines": [
+    "\"NOOOOOOO!\""
+   ]
+  },
+  {
+   "begin": "1404.960",
+   "children": [],
+   "end": "1416.440",
+   "id": "f000134",
+   "language": "eng",
+   "lines": [
+    "Uncle Vernon seized one of Marge's feet and tried to pull her down again, but was almost lifted from the \ufb02oor himself. A second later, Ripper leapt forward and sank his teeth into Uncle Vernon's leg."
+   ]
+  },
+  {
+   "begin": "1416.440",
+   "children": [],
+   "end": "1428.920",
+   "id": "f000135",
+   "language": "eng",
+   "lines": [
+    "Harry tore from the dining room before anyone could stop him, heading for the cupboard under the stairs. The cupboard door burst magically open as he reached it. In seconds, he had heaved his trunk to the front door. He"
+   ]
+  },
+  {
+   "begin": "1428.920",
+   "children": [],
+   "end": "1448.040",
+   "id": "f000136",
+   "language": "eng",
+   "lines": [
+    "sprinted upstairs and threw himself under the bed, wrenching up the loose \ufb02oorboard, and grabbed the pillowcase full of his books and birthday presents. He wriggled out, seized Hedwig's empty cage, and dashed back downstairs to his trunk, just as Uncle Vernon burst out of the dining room, his trouser leg in bloody tatters."
+   ]
+  },
+  {
+   "begin": "1448.040",
+   "children": [],
+   "end": "1453.200",
+   "id": "f000137",
+   "language": "eng",
+   "lines": [
+    "\"COME BACK IN HERE!\" he bellowed. \"COME BACK AND PUT HER RIGHT!\""
+   ]
+  },
+  {
+   "begin": "1453.200",
+   "children": [],
+   "end": "1460.840",
+   "id": "f000138",
+   "language": "eng",
+   "lines": [
+    "But a reckless rage had come over Harry. He kicked his trunk open, pulled out his wand, and pointed it at Uncle Vernon."
+   ]
+  },
+  {
+   "begin": "1460.840",
+   "children": [],
+   "end": "1467.320",
+   "id": "f000139",
+   "language": "eng",
+   "lines": [
+    "\"She deserved it,\" Harry said, breathing very fast. \"She deserved what she got. You keep away from me.\""
+   ]
+  },
+  {
+   "begin": "1467.320",
+   "children": [],
+   "end": "1470.080",
+   "id": "f000140",
+   "language": "eng",
+   "lines": [
+    "He fumbled behind him for the latch on the door."
+   ]
+  },
+  {
+   "begin": "1470.080",
+   "children": [],
+   "end": "1473.240",
+   "id": "f000141",
+   "language": "eng",
+   "lines": [
+    "\"I'm going,\" Harry said. \"I've had enough.\""
+   ]
+  },
+  {
+   "begin": "1473.240",
+   "children": [],
+   "end": "1483.000",
+   "id": "f000142",
+   "language": "eng",
+   "lines": [
+    "And in the next moment, he was out in the dark, quiet street, heaving his heavy trunk behind him, Hedwig's cage under his arm."
+   ]
+  }
+ ]
+}
