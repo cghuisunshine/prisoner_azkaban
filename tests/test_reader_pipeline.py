@@ -116,6 +116,25 @@ class ReaderPipelineTests(unittest.TestCase):
 
         self.assertEqual(paragraphs, ["top-of-the-range broomstick", "summer holidays"])
 
+    def test_chapter_fragments_splits_body_into_sentence_alignment_units(self):
+        chapter = reader_pipeline.Chapter(
+            number=1,
+            title="Owl Post",
+            body='Mr. Weasley waved. "Can you hear me?" Ron asked. He waited.',
+        )
+
+        fragments = reader_pipeline.chapter_fragments(chapter)
+
+        self.assertEqual(
+            fragments,
+            [
+                "Chapter One. Owl Post.",
+                "Mr. Weasley waved.",
+                '"Can you hear me?" Ron asked.',
+                "He waited.",
+            ],
+        )
+
     def test_extract_chapter_without_visible_title_keeps_body(self):
         source = """
         CHAPTER THREE
@@ -445,6 +464,41 @@ class ReaderPipelineTests(unittest.TestCase):
         self.assertEqual(manifest["chapters"][1]["paragraphs"][0]["begin"], 3.0)
         self.assertEqual(manifest["chapters"][2]["kind"], "outro")
         self.assertEqual(manifest["duration"], 105.0)
+
+    def test_build_reader_manifest_splits_paragraph_aligned_fragments_into_sentences(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            align_dir = root / "alignments"
+            align_dir.mkdir()
+            (align_dir / "chapter_001.json").write_text(
+                json.dumps(
+                    {
+                        "fragments": [
+                            {
+                                "id": "f000001",
+                                "begin": "0.000",
+                                "end": "8.000",
+                                "lines": ["First sentence. Second sentence? Third sentence!"],
+                            },
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            manifest = reader_pipeline.build_reader_manifest(
+                chapters=[reader_pipeline.Chapter(1, "One", "First sentence. Second sentence? Third sentence!")],
+                audio_files=[Path("chapter_001.mp3")],
+                alignment_dir=align_dir,
+                durations=[8.0],
+                title="Example Book",
+            )
+
+        fragments = manifest["chapters"][0]["paragraphs"]
+        self.assertEqual([fragment["text"] for fragment in fragments], ["First sentence.", "Second sentence?", "Third sentence!"])
+        self.assertEqual(fragments[0]["localBegin"], 0.0)
+        self.assertGreater(fragments[1]["localBegin"], fragments[0]["localBegin"])
+        self.assertEqual(fragments[-1]["localEnd"], 8.0)
 
 
 if __name__ == "__main__":

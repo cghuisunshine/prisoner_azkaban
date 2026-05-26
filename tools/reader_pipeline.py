@@ -415,9 +415,122 @@ def flush_paragraph(lines: list[str], paragraphs: list[str]) -> None:
         paragraphs.append(paragraph)
 
 
+SENTENCE_ABBREVIATIONS = {
+    "Mr.",
+    "Mrs.",
+    "Ms.",
+    "Dr.",
+    "Prof.",
+    "St.",
+    "No.",
+    "etc.",
+    "e.g.",
+    "i.e.",
+}
+
+
+def split_sentences(text: str) -> list[str]:
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return []
+
+    sentences: list[str] = []
+    start = 0
+    index = 0
+    while index < len(text):
+        char = text[index]
+        if char not in ".?!…":
+            index += 1
+            continue
+        if is_sentence_abbreviation(text, index):
+            index += 1
+            continue
+
+        end = index + 1
+        while end < len(text) and text[end] in "\"')]}":
+            end += 1
+        if end == len(text) or text[end].isspace():
+            sentence = text[start:end].strip()
+            if sentence:
+                sentences.append(sentence)
+            start = end
+            while start < len(text) and text[start].isspace():
+                start += 1
+            index = start
+            continue
+        index += 1
+
+    tail = text[start:].strip()
+    if tail:
+        sentences.append(tail)
+    return merge_dialogue_tags(sentences)
+
+
+def is_sentence_abbreviation(text: str, period_index: int) -> bool:
+    token_match = re.search(r"\b[\w.']+\.$", text[: period_index + 1])
+    if not token_match:
+        return False
+    token = token_match.group(0)
+    return token in SENTENCE_ABBREVIATIONS or re.fullmatch(r"(?:[A-Z]\.){2,}", token) is not None
+
+
+def merge_dialogue_tags(sentences: Sequence[str]) -> list[str]:
+    merged: list[str] = []
+    speech_tag_re = re.compile(r"^[A-Z][A-Za-z' -]{0,40}\s+(?:asked|said|cried|whispered|shouted|yelled|called|replied|answered|muttered|bellowed)\b")
+    for sentence in sentences:
+        if merged and merged[-1].endswith(('"', "'")) and speech_tag_re.match(sentence):
+            merged[-1] = f"{merged[-1]} {sentence}"
+        else:
+            merged.append(sentence)
+    return merged
+
+
 def chapter_fragments(chapter: Chapter) -> list[str]:
     heading = f"Chapter {display_chapter_word(chapter.number)}. {chapter.title}."
-    return [heading, *normalize_paragraphs(chapter.body, running_headers=running_headers_for(chapter))]
+    fragments = [heading]
+    for paragraph in normalize_paragraphs(chapter.body, running_headers=running_headers_for(chapter)):
+        fragments.extend(split_sentences(paragraph))
+    return fragments
+
+
+def manifest_entries_from_alignment_fragment(chapter_number: int, fragment: dict, offset: float = 0.0) -> list[dict]:
+    begin = float(fragment["begin"])
+    end = float(fragment["end"])
+    text = " ".join(fragment.get("lines", [])).strip()
+    sentences = split_sentences(text) or [text]
+    if len(sentences) == 1:
+        return [
+            {
+                "id": f"c{chapter_number:03d}_{fragment.get('id', 'fragment')}",
+                "text": sentences[0],
+                "begin": round(offset + begin, 3),
+                "end": round(offset + end, 3),
+                "localBegin": round(begin, 3),
+                "localEnd": round(end, 3),
+            }
+        ]
+
+    total_chars = sum(len(sentence) for sentence in sentences) or len(sentences)
+    entries = []
+    cursor = begin
+    duration = end - begin
+    for index, sentence in enumerate(sentences, start=1):
+        if index == len(sentences):
+            sentence_end = end
+        else:
+            sentence_end = begin + duration * (sum(len(item) for item in sentences[:index]) / total_chars)
+        entries.append(
+            {
+                "id": f"c{chapter_number:03d}_{fragment.get('id', 'fragment')}_s{index:03d}",
+                "text": sentence,
+                "begin": round(offset + cursor, 3),
+                "end": round(offset + sentence_end, 3),
+                "localBegin": round(cursor, 3),
+                "localEnd": round(sentence_end, 3),
+            }
+        )
+        cursor = sentence_end
+    return entries
 
 
 def running_headers_for(chapter: Chapter) -> set[str]:
@@ -766,19 +879,7 @@ def build_reader_manifest(
         data = json.loads(alignment_path.read_text(encoding="utf-8"))
         paragraphs = []
         for fragment in data.get("fragments", []):
-            begin = float(fragment["begin"])
-            end = float(fragment["end"])
-            text = " ".join(fragment.get("lines", [])).strip()
-            paragraphs.append(
-                {
-                    "id": f"c{chapter.number:03d}_{fragment.get('id', len(paragraphs))}",
-                    "text": text,
-                    "begin": round(offset + begin, 3),
-                    "end": round(offset + end, 3),
-                    "localBegin": round(begin, 3),
-                    "localEnd": round(end, 3),
-                }
-            )
+            paragraphs.extend(manifest_entries_from_alignment_fragment(chapter.number, fragment, offset=offset))
         manifest["chapters"].append(
             {
                 "kind": "chapter",
@@ -834,19 +935,7 @@ def build_reader_manifest_from_single_alignment(
         cursor += expected_count
         paragraphs = []
         for fragment in chapter_fragments_data:
-            begin = float(fragment["begin"])
-            end = float(fragment["end"])
-            text = " ".join(fragment.get("lines", [])).strip()
-            paragraphs.append(
-                {
-                    "id": f"c{chapter.number:03d}_{fragment.get('id', len(paragraphs))}",
-                    "text": text,
-                    "begin": round(begin, 3),
-                    "end": round(end, 3),
-                    "localBegin": round(begin, 3),
-                    "localEnd": round(end, 3),
-                }
-            )
+            paragraphs.extend(manifest_entries_from_alignment_fragment(chapter.number, fragment))
         start = paragraphs[0]["localBegin"] if paragraphs else 0.0
         manifest["chapters"].append(
             {
@@ -1147,8 +1236,10 @@ def build_reader_html(manifest: dict) -> str:
     const seekBar = document.getElementById('seekBar');
     const timeLabel = document.getElementById('timeLabel');
     const chapterTime = document.getElementById('chapterTime');
+    const readerProgressKey = 'prisoner-azkaban-reader-progress';
     let currentIndex = 0;
     let currentParagraphId = null;
+    let restoringProgress = false;
 
     function formatTime(seconds) {{
       seconds = Math.max(0, Math.floor(seconds || 0));
@@ -1175,15 +1266,65 @@ def build_reader_html(manifest: dict) -> str:
       return chapter.audioStart || 0;
     }}
 
-    function loadChapter(index, autoplay = false, seek = true) {{
+    function findParagraph(chapter, paragraphId) {{
+      return chapter.paragraphs.find((paragraph) => paragraph.id === paragraphId);
+    }}
+
+    function saveProgress(paragraphId = currentParagraphId) {{
+      const chapter = manifest.chapters[currentIndex];
+      const paragraph = paragraphId ? findParagraph(chapter, paragraphId) : null;
+      if (!paragraph) return;
+      const localTime = Math.min(
+        Math.max(audio.currentTime || paragraph.localBegin, paragraph.localBegin),
+        paragraph.localEnd
+      );
+      try {{
+        localStorage.setItem(readerProgressKey, JSON.stringify({{
+          chapterIndex: currentIndex,
+          paragraphId: paragraph.id,
+          localTime,
+          updatedAt: Date.now()
+        }}));
+      }} catch (_error) {{
+        // Reading should continue even when storage is unavailable.
+      }}
+    }}
+
+    function loadSavedProgress() {{
+      try {{
+        const raw = localStorage.getItem(readerProgressKey);
+        if (!raw) return null;
+        const savedProgress = JSON.parse(raw);
+        const chapter = manifest.chapters[savedProgress.chapterIndex];
+        const paragraph = chapter ? findParagraph(chapter, savedProgress.paragraphId) : null;
+        if (!chapter || !paragraph) return null;
+        const localTime = Number.isFinite(Number(savedProgress.localTime)) ? Number(savedProgress.localTime) : paragraph.localBegin;
+        return {{ ...savedProgress, localTime }};
+      }} catch (_error) {{
+        return null;
+      }}
+    }}
+
+    function markParagraph(paragraphId, scrollBehavior = 'smooth') {{
+      if (paragraphId === currentParagraphId) return;
+      if (currentParagraphId) {{
+        document.getElementById(currentParagraphId)?.classList.remove('active');
+      }}
+      currentParagraphId = paragraphId;
+      if (currentParagraphId) {{
+        const node = document.getElementById(currentParagraphId);
+        node?.classList.add('active');
+        node?.scrollIntoView({{ block: 'center', behavior: scrollBehavior }});
+      }}
+    }}
+
+    function loadChapter(index, autoplay = false, seek = true, savedProgress = null) {{
       currentIndex = Math.max(0, Math.min(index, manifest.chapters.length - 1));
       const chapter = manifest.chapters[currentIndex];
       currentParagraphId = null;
+      restoringProgress = Boolean(savedProgress);
       const nextSource = new URL(chapter.audio, window.location.href).href;
       const sourceChanged = audio.src !== nextSource;
-      if (sourceChanged) {{
-        audio.src = chapter.audio;
-      }}
       chapterTitle.textContent = chapter.kind === 'chapter' ? `Chapter ${{chapter.number}}. ${{chapter.title}}` : chapter.title;
       reader.innerHTML = '';
       if (chapter.paragraphs.length) {{
@@ -1194,6 +1335,7 @@ def build_reader_html(manifest: dict) -> str:
           node.textContent = paragraph.text;
           node.addEventListener('click', () => {{
             audio.currentTime = paragraph.localBegin;
+            saveProgress(paragraph.id);
             audio.play();
           }});
           reader.appendChild(node);
@@ -1205,17 +1347,54 @@ def build_reader_html(manifest: dict) -> str:
         reader.appendChild(node);
       }}
       renderNav();
-      updateTimes();
+      let playbackStarted = false;
       const startPlayback = () => {{
+        if (playbackStarted) return;
+        playbackStarted = true;
+        const finishRestore = () => {{
+          if (!restoringProgress) return;
+          if (savedProgress?.paragraphId) {{
+            markParagraph(savedProgress.paragraphId, 'auto');
+          }}
+          restoringProgress = false;
+        }};
+        if (savedProgress) {{
+          audio.addEventListener('seeked', finishRestore, {{ once: true }});
+          window.setTimeout(finishRestore, 500);
+        }}
         if (seek) {{
-          audio.currentTime = chapterAudioStart(chapter);
+          audio.currentTime = savedProgress?.localTime ?? chapterAudioStart(chapter);
         }}
         if (autoplay) {{
           audio.play();
         }}
+        if (savedProgress?.paragraphId) {{
+          markParagraph(savedProgress.paragraphId, 'auto');
+        }}
+        if (!savedProgress) {{
+          updateTimes();
+          restoringProgress = false;
+        }}
       }};
-      if (sourceChanged && audio.readyState < 1) {{
+      if (sourceChanged) {{
         audio.addEventListener('loadedmetadata', startPlayback, {{ once: true }});
+        audio.src = chapter.audio;
+        let metadataChecks = 0;
+        const startWhenReady = () => {{
+          if (playbackStarted) return;
+          if (audio.readyState >= 1) {{
+            startPlayback();
+            return;
+          }}
+          metadataChecks += 1;
+          if (metadataChecks < 20) {{
+            window.setTimeout(startWhenReady, 50);
+          }}
+        }};
+        window.setTimeout(startWhenReady, 0);
+        if (savedProgress?.paragraphId) {{
+          markParagraph(savedProgress.paragraphId, 'auto');
+        }}
       }} else {{
         startPlayback();
       }}
@@ -1240,14 +1419,9 @@ def build_reader_html(manifest: dict) -> str:
       const paragraph = chapter.paragraphs.find((item) => local >= item.localBegin && local < item.localEnd);
       const nextId = paragraph ? paragraph.id : null;
       if (nextId === currentParagraphId) return;
-      if (currentParagraphId) {{
-        document.getElementById(currentParagraphId)?.classList.remove('active');
-      }}
-      currentParagraphId = nextId;
-      if (currentParagraphId) {{
-        const node = document.getElementById(currentParagraphId);
-        node?.classList.add('active');
-        node?.scrollIntoView({{ block: 'center', behavior: 'smooth' }});
+      markParagraph(nextId);
+      if (nextId && !restoringProgress) {{
+        saveProgress(nextId);
       }}
     }}
 
@@ -1263,6 +1437,7 @@ def build_reader_html(manifest: dict) -> str:
     seekBar.addEventListener('input', () => {{
       const chapter = manifest.chapters[currentIndex];
       audio.currentTime = chapterAudioStart(chapter) + (Number(seekBar.value) / 1000) * chapter.duration;
+      updateHighlight(audio.currentTime);
     }});
     audio.addEventListener('play', () => playButton.textContent = 'Pause');
     audio.addEventListener('pause', () => playButton.textContent = 'Play');
@@ -1274,7 +1449,12 @@ def build_reader_html(manifest: dict) -> str:
       }}
     }});
 
-    loadChapter(0, false);
+    const savedProgress = loadSavedProgress();
+    if (savedProgress) {{
+      loadChapter(savedProgress.chapterIndex, false, true, savedProgress);
+    }} else {{
+      loadChapter(0, false);
+    }}
   </script>
 </body>
 </html>
